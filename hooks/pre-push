@@ -1,0 +1,4 @@
+#!/bin/sh
+PATH="/usr/local/bin:$PATH"
+
+grunt unittest

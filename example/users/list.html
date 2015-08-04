@@ -1,0 +1,50 @@
+ <h2>User management</h2>
+    <h3 style="margin-bottom: 0px">Users</h3>
+
+    <div class="col-sm-12" >
+      <div ng-repeat = "user in users">
+        <div class="row users">
+          <div class="col-sm-12">
+            <div class="row user_firstview" ng-click="user.moreinfo=!user.moreinfo">
+              <div class="col-sm-1">
+                <div class="user_roles user_role_holder">
+                  <div ng-show="user.roles.indexOf('admin') > -1" class="user_role user_rol_admin icon2-badge"></div>
+                  <div ng-show="user.roles.indexOf('admin') == -1" class="user_role user_rol_user icon2-user"></div>
+                </div>
+              </div>
+              <div class="col-sm-11" style="position:relative">
+                <h4 class="username">{{user.username}} <a ng-modalroute="users.edit({userid:123})" modalroute-config="modalConfig"><i ng-hide="user.roles.indexOf('admin') > -1" >EDIT</i></a> <i ng-hide="user.roles.indexOf('admin') > -1" ng-click="deleteUser()">DEL</i></h4>
+                <p class="user_roles_names" style="position:absolute; top: 5px; right: 5px;">
+                  <span ng-repeat="role in user.roles">{{role}}</span>
+                </p>
+                <p>Last login: {{user.lastLogin}}</p>
+              </div>
+            </div>
+            <div class="row moreinfoholder" ng-show="user.moreinfo">
+              <div class="col-sm-12 " style="padding-left: 0px; padding-right: 0px" >
+                <div class="moreinfo">
+                  <div class="row" style="margin-left: 5px; position:relative">
+                    <div class="col-sm-6" >
+                      <h4>Contact data</h4>
+                      <p>Login: {{user.login}}</p>
+                      <p>Email: {{user.email}}</p>
+                    </div>
+                    <div class="col-sm-6" >
+                      <h4>Recent activity</h4>
+                      <ul>
+                        <li>03-20-2015: Login succeeded: 292.3.23.2</li>
+                        <li>12-20-2015: Login succeeded: 292.3.23.2</li>
+                        <li>28-20-2015: Login failed: 292.3.23.2</li>
+                        <li>30-20-2015: Login succeeded: 292.3.23.2</li>
+                      </ul>
+                    </div>
+                    <div class="moreinfoclose icon2-close" ng-click="user.moreinfo=false"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>

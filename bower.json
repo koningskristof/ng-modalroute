@@ -1,0 +1,28 @@
+{
+  "name": "ng-modalroute",
+  "version": "1.0.0",
+  "main": "./ngModalroute.js",
+  "description": "Add the ng-modalroute directive to a link so the user can choose to open it in a Angular-UI modal or in a new tab.",
+  "authors": [
+    "Kristof Konings koningskristof@gmail.com"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/koningskristof/ng-modalroute.git",
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-ui": "latest",
+    "angular-ui-router": "latest",
+    "jquery": "~2.1.4",
+    "angular-route": "~1.4.3",
+    "angular-bootstrap": "~0.13.2",
+    "bootstrap": "~3.3.5"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "app/bower_components",
+    "test",
+    ".tmp"
+  ],
+  "devDependencies": {}
+}

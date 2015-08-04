@@ -1,0 +1,107 @@
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="bower_components/angular-ui/build/angular-ui.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+    <style>
+    .users {
+      border-bottom: 1px #e5e5e5 solid;
+    }
+
+    .user_firstview {
+      padding-bottom: 5px;
+      padding-top: 5px;
+    }
+
+    .users:hover {
+      background-color: #F5FBFF;
+      cursor: pointer;
+    }
+    .moreinfo:hover {
+      cursor: default;
+    }
+
+    .users h4.username {
+      margin-bottom: 0px;
+      display: inline-block;
+    }
+
+    .user_roles {
+      text-align: center;
+    }
+    .user_role_holder {
+      display: inline-block;
+      text-align: left;
+      width: 80px;
+    }
+
+    .user_roles .user_role {
+      width: 75px;
+      display: inline-block;
+      font-size: 30px;
+    }
+    .user_roles2 .user_role, .user_roles3 .user_role, .user_roles4 .user_role {
+      width: 50px;
+      display: inline-block;
+      font-size:35px;
+    }
+
+    .user_roles.user_role_holder {
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+
+    .user_roles2 .user_role_holder, .user_roles3 .user_role_holder, .user_roles4 .user_role_holder {
+      margin-top: 25px;
+      margin-bottom: 15px;
+    }
+
+    .user_roles_names {
+      margin: 0px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+
+    .user_roles_names span {
+      margin-right: 5px;
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: small;
+      color: grey;
+
+    }
+
+    .user_role {
+      text-align: center;
+      font-weight: small;
+    }
+
+    .moreinfo {
+      background-color: #e7f7ff;
+      padding: 10px;
+    }
+
+    .moreinfoclose {
+      position: absolute;
+      right: 15px;
+      top: 0px;
+      cursor: pointer;
+      font-size: 1.5em;
+    }
+
+    </style>
+  </head>
+  <body ng-app="example" >
+   <ui-view></ui-view>
+  </body>
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-ui/build/angular-ui.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="ngModalroute.js"></script>
+  <script src="ngModalroute-example.js"></script>
+
+</html>
